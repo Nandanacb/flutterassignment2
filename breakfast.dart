@@ -90,14 +90,14 @@ class FoodExample extends StatelessWidget{
 
 
           Expanded(
-            child: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,crossAxisSpacing: 0,mainAxisSpacing:0,childAspectRatio: .7),
+            child: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing:2,crossAxisSpacing: 2,childAspectRatio: .7),
              itemCount: 6,
              itemBuilder: (context,index){
               return Padding(
                 padding: const EdgeInsets.all(10),
                 child: Container(
                   
-                  decoration: BoxDecoration(color: Colors.white60,),
+                  decoration: BoxDecoration(borderRadius:BorderRadius.circular(15),color:  Colors.white60,),
                   child: Column(
                     children: [
                       Container(
@@ -108,7 +108,7 @@ class FoodExample extends StatelessWidget{
                       
                       
                       Padding(
-                        padding: const EdgeInsets.all(7.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Row(
                         
                           children: [ 
@@ -118,7 +118,7 @@ class FoodExample extends StatelessWidget{
                       
                   
                        Padding(
-                         padding: const EdgeInsets.all(7.0),
+                         padding: const EdgeInsets.all(8.0),
                          child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -130,7 +130,7 @@ class FoodExample extends StatelessWidget{
                         
                       
                           Padding(
-                            padding: const EdgeInsets.all(7.0),
+                            padding: const EdgeInsets.all(8.0),
                             child: Row(
                                                     
                                children: [
